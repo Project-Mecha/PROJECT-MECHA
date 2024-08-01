@@ -18,6 +18,14 @@ void UPMCharacterAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProper
 	DOREPLIFETIME_CONDITION_NOTIFY(UPMCharacterAttributeSet, MaxHealth, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(UPMCharacterAttributeSet, Mana, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(UPMCharacterAttributeSet, MaxMana, COND_None, REPNOTIFY_Always)
+	DOREPLIFETIME_CONDITION_NOTIFY(UPMCharacterAttributeSet, Level, COND_None, REPNOTIFY_Always)
+	DOREPLIFETIME_CONDITION_NOTIFY(UPMCharacterAttributeSet, AttackPower, COND_None, REPNOTIFY_Always)
+
+}
+
+void UPMCharacterAttributeSet::OnRep_Level(const FGameplayAttributeData& OldLevel)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPMCharacterAttributeSet, Health, OldLevel);
 }
 
 void UPMCharacterAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHealth)
