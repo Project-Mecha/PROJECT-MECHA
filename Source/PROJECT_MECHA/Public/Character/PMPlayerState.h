@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerState.h"
+#include "AbilitySystemComponent.h"
+#include "Abilities/PMCharacterASC.h"
 #include "AbilitySystemInterface.h"
 #include "GameplayTagContainer.h"
 #include "PMPlayerState.generated.h"
@@ -43,7 +45,7 @@ public:
 	float GetMaxMana() const;
 
 	UFUNCTION(BlueprintCallable, BlueprintPure)
-	int32 GetLevel() const;
+	int32 GetAbilityLevel() const;
 
 protected:
 	UPROPERTY()
@@ -62,12 +64,12 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	void HealthChanged(const FOnAttributeChangeData& Data) const;
-	void MaxHealthChanged(const FOnAttributeChangeData& Data) const;
-	void ManaChanged(const FOnAttributeChangeData& Data) const;
-	void MaxManaChanged(const FOnAttributeChangeData& Data) const;
-	void LevelChanged(const FOnAttributeChangeData& Data) const;
+	virtual void HealthChanged(const FOnAttributeChangeData& Data);
+	virtual void MaxHealthChanged(const FOnAttributeChangeData& Data);
+	virtual void ManaChanged(const FOnAttributeChangeData& Data);
+	virtual void MaxManaChanged(const FOnAttributeChangeData& Data);
+	virtual void LevelChanged(const FOnAttributeChangeData& Data);
 
-	void StunTagChanged(const FGameplayTag CallbackTag, int32 NewTag) const;
+	virtual void StunTagChanged(const FGameplayTag CallbackTag, int32 NewTag);
 
 };

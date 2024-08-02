@@ -3,8 +3,6 @@
 
 #include "Character/PMPlayerState.h"
 
-#include "AbilitySystemComponent.h"
-#include "Abilities/PMCharacterASC.h"
 #include "Abilities/PMCharacterAttributeSet.h"
 
 APMPlayerState::APMPlayerState()
@@ -77,37 +75,37 @@ float APMPlayerState::GetMaxMana() const
 	return AttributeSet->GetMaxMana();
 }
 
-int32 APMPlayerState::GetLevel() const
+int32 APMPlayerState::GetAbilityLevel() const
 {
 	return AttributeSet->GetLevel();
 }
 
-void APMPlayerState::HealthChanged(const FOnAttributeChangeData& Data) const
+void APMPlayerState::HealthChanged(const FOnAttributeChangeData& Data)
 {
 
 }
 
-void APMPlayerState::MaxHealthChanged(const FOnAttributeChangeData& Data) const
+void APMPlayerState::MaxHealthChanged(const FOnAttributeChangeData& Data)
 {
 
 }
 
-void APMPlayerState::ManaChanged(const FOnAttributeChangeData& Data) const
+void APMPlayerState::ManaChanged(const FOnAttributeChangeData& Data)
 {
 
 }
 
-void APMPlayerState::MaxManaChanged(const FOnAttributeChangeData& Data) const
+void APMPlayerState::MaxManaChanged(const FOnAttributeChangeData& Data)
 {
 
 }
 
-void APMPlayerState::LevelChanged(const FOnAttributeChangeData& Data) const
+void APMPlayerState::LevelChanged(const FOnAttributeChangeData& Data)
 {
 
 }
 
-void APMPlayerState::StunTagChanged(const FGameplayTag CallbackTag, int32 NewCount) const
+void APMPlayerState::StunTagChanged(const FGameplayTag CallbackTag, int32 NewCount)
 {
 	if(NewCount > 0)
 	{
