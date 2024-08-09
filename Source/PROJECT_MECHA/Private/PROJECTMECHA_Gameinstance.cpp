@@ -89,3 +89,28 @@ void UPROJECTMECHA_Gameinstance::SessionCreated(FName SessionName, bool bWasSucc
 		GetWorld()->ServerTravel(LevelName.ToString() + "?listen");
 	}
 }
+
+void UPROJECTMECHA_Gameinstance::FindSessionCompleted(bool bWasSuccessful)
+{
+	if (bWasSuccessful)
+	{
+		for (const FOnlineSessionSearchResult& results : SearchSettings->SearchResults)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Found Session with %s"), *results.GetSessionIdStr());
+		}
+	}
+}
+
+void UPROJECTMECHA_Gameinstance::FindSession()
+{
+	if (SessionPtr)
+	{
+		SearchSettings = MakeShareable(new FOnlineSessionSearch);
+
+		SearchSettings->bIsLanQuery = false;
+		SearchSettings->MaxSearchResults = 100;
+		SearchSettings->QuerySettings.Set(FName("LOBBYSEARCH"), true, EOnlineComparisonOp::Equals);
+
+		SessionPtr->FindSessions(0, SearchSettings.ToSharedRef());
+	}
+}
