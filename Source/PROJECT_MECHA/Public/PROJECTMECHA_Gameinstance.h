@@ -17,8 +17,17 @@ protected:
 
 	class IOnlineSubsystem* OnlineSubsystem;
 	TSharedPtr<class IOnlineIdentity, ESPMode::ThreadSafe> IdentityPtr;
+	TSharedPtr<class IOnlineSession, ESPMode::ThreadSafe> SessionPtr;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSoftObjectPtr<UWorld> GameLevel;
 
 public:
 	void Login();
 	void LoginCompleted(int NumOfPlayers, bool bWasSuccessful, const FUniqueNetId& UserId, const FString& Error);
+
+	UFUNCTION(BlueprintCallable)
+		void CreateSession();
+
+	void SessionCreated(FName SessionName, bool bWasSuccessful);
 };
