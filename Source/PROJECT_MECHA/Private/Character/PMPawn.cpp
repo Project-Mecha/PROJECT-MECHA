@@ -3,9 +3,9 @@
 
 #include "Character/PMPawn.h"
 
+#include "Character/PMPlayerState.h"
 #include "Components/SkeletalMeshComponent.h"
-#include "GameFramework/SpringArmComponent.h"
-#include "Camera/CameraComponent.h"
+#include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
@@ -66,6 +66,24 @@ float APMPawn::GetMaxHealth()
 	return 1.0f;
 }
 
+float APMPawn::GetMaxMana()
+{
+	if (PlayerAttributeSet) return PlayerAttributeSet->GetMaxMana();
+	return 1.0f;
+}
+
+void APMPawn::SetMana(float Mana)
+{
+	if (PlayerAttributeSet)
+		PlayerAttributeSet->SetMana(Mana);
+}
+
+void APMPawn::SetHealth(float Health)
+{
+	if (PlayerAttributeSet)
+		PlayerAttributeSet->SetHealth(Health);
+}
+
 float APMPawn::GetAttributeLevel()
 {
 	if (PlayerAttributeSet) return PlayerAttributeSet->GetLevel();
@@ -76,14 +94,75 @@ void APMPawn::BeginPlay()
 {
 	Super::BeginPlay();
 
+	SetReplicates(true);
+
 	AnimInstance = this->GetMesh()->GetAnimInstance();
+
+	StartingCameraBoomArmLength = GetBackCameraBoomLength();
+	StartingCameraBoomLocation = BackSpringArm->GetRelativeLocation();
+}
+
+void APMPawn::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	
+	InitializeStartingValues();
+
+	AddStartupEffects();
+	GiveAbilities();
+}
+
+void APMPawn::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+
+	InitializeStartingValues();
+}
+
+void APMPawn::InitializeStartingValues()
+{
+	if (APMPlayerState* PS = GetPlayerState<APMPlayerState>())
+	{
+		UPMCharacterASC* PlayerAbilitySystemComponent = Cast<UPMCharacterASC>(PS->GetAbilitySystemComponent());
+
+		PS->GetAbilitySystemComponent()->InitAbilityActorInfo(PS, this);
+
+		AbilitySystemComponent = PlayerAbilitySystemComponent;
+		PlayerAttributeSet = PS->GetAttributeSet();
+
+		InitializeAttributes();
+
+		PlayerAbilitySystemComponent->SetTagMapCount(DeadTag, 0);
+
+		SetHealth(GetMaxHealth());
+		SetMana(GetMaxMana());
+	}
 }
 
 void APMPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		// steering 
+		EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Triggered, this, &APMPawn::Steering);
+		EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Completed, this, &APMPawn::Steering);
 
+		// throttle 
+		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Triggered, this, &APMPawn::Throttle);
+		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Completed, this, &APMPawn::Throttle);
+
+		// handbrake 
+		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Started, this, &APMPawn::StartHandbrake);
+		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Completed, this, &APMPawn::StopHandbrake);
+
+		// look around 
+		EnhancedInputComponent->BindAction(LookAroundAction, ETriggerEvent::Triggered, this, &APMPawn::LookAround);
+
+		// toggle camera 
+		EnhancedInputComponent->BindAction(ToggleCameraAction, ETriggerEvent::Triggered, this, &APMPawn::ToggleCamera);
+	}
 }
 
 void APMPawn::Tick(float Delta)
@@ -94,27 +173,41 @@ void APMPawn::Tick(float Delta)
 
 void APMPawn::Steering(const FInputActionValue& Value)
 {
+	float SteeringValue = Value.Get<float>();
 
+	ChaosVehicleMovement->SetSteeringInput(SteeringValue);
 }
 
 void APMPawn::Throttle(const FInputActionValue& Value)
 {
+	float ThrottleValue = Value.Get<float>();
+
+	ChaosVehicleMovement->SetThrottleInput(ThrottleValue);
 }
 
 void APMPawn::StartHandbrake(const FInputActionValue& Value)
 {
+	ChaosVehicleMovement->SetHandbrakeInput(true);
 }
 
 void APMPawn::StopHandbrake(const FInputActionValue& Value)
 {
+	ChaosVehicleMovement->SetHandbrakeInput(false);
 }
 
 void APMPawn::LookAround(const FInputActionValue& Value)
 {
+	float LookValue = Value.Get<float>();
+
+	BackSpringArm->AddLocalRotation(FRotator(0.f, LookValue, 0.f));
 }
 
 void APMPawn::ToggleCamera(const FInputActionValue& Value)
 {
+	bFrontCameraActive = !bFrontCameraActive;
+
+	FrontCamera->SetActive(bFrontCameraActive);
+	BackCamera->SetActive(!bFrontCameraActive);
 }
 
 void APMPawn::Die()
