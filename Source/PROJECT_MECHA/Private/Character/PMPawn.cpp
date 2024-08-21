@@ -13,6 +13,7 @@
 #include "Abilities/PMCharacterASC.h"
 #include "Abilities/PMCharacterAttributeSet.h"
 #include "ChaosWheeledVehicleMovementComponent.h"
+#include "Net/UnrealNetwork.h"
 
 APMPawn::APMPawn()
 {
@@ -137,6 +138,12 @@ void APMPawn::InitializeStartingValues()
 		SetHealth(GetMaxHealth());
 		SetMana(GetMaxMana());
 	}
+}
+
+void APMPawn::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
 }
 
 void APMPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "OnlineSessionSettings.h"
 #include "MainMenu.generated.h"
 
 /**
@@ -19,11 +20,23 @@ protected:
 
 	TObjectPtr<class UPROJECTMECHA_Gameinstance> GameInstance;
 	
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class ULobbyEntry> LobbyEntry_Class;
+
+	int SelectedLobbyIndex = -1;
 private:
-	UPROPERTY( meta = (BindWidget) )
-	class UButton* LoginButton;
+	UPROPERTY(meta = (BindWidget))
+	class UScrollBox* LobbyListScrollBox;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* JoinSessionButton;
 
 protected:
 	UFUNCTION()
-	void LoginButtonClicked();
+	void LobyEntrySelected(int SelectedLobby);
+
+	UFUNCTION()
+	void OnJoinSessesionClicked();
+
+	void OnSessionSearchCompleted(const TArray<FOnlineSessionSearchResult>& SearchResults);
 };

@@ -2,10 +2,7 @@
 
 
 #include "PROJECTMECHA_Gameinstance.h"
-#include "OnlineSubsystem.h"
-#include "Interfaces/OnlineIdentityInterface.h"
-#include "Interfaces/OnlineSessionInterface.h"
-#include "OnlineSessionSettings.h"
+
 
 void UPROJECTMECHA_Gameinstance::Init()
 {
@@ -18,6 +15,8 @@ void UPROJECTMECHA_Gameinstance::Init()
 
 	SessionPtr = OnlineSubsystem->GetSessionInterface();
 	SessionPtr->OnCreateSessionCompleteDelegates.AddUObject(this, &UPROJECTMECHA_Gameinstance::SessionCreated);
+	SessionPtr->OnFindSessionsCompleteDelegates.AddUObject(this, &UPROJECTMECHA_Gameinstance::FindSessionCompleted);
+	SessionPtr->OnJoinSessionCompleteDelegates.AddUObject(this, &UPROJECTMECHA_Gameinstance::JoinSessionCompleted);
 }
 
 void UPROJECTMECHA_Gameinstance::Login()
@@ -47,7 +46,7 @@ void UPROJECTMECHA_Gameinstance::LoginCompleted(int NumOfPlayers, bool bWasSucce
 	}
 }
 
-void UPROJECTMECHA_Gameinstance::CreateSession()
+void UPROJECTMECHA_Gameinstance::CreateSession(const FName& LobbyName)
 {
 	if (SessionPtr)
 	{
@@ -60,11 +59,11 @@ void UPROJECTMECHA_Gameinstance::CreateSession()
 		SessionSettings.bUseLobbiesIfAvailable = true;
 		SessionSettings.bUsesPresence = true;
 		SessionSettings.bAllowJoinViaPresence = true;
-		SessionSettings.NumPublicConnections = true;
+		SessionSettings.NumPublicConnections = 10;       //Pay Attention
 
-		SessionSettings.Set("Lobby1", EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
+		SessionSettings.Set(SessionNameKey, LobbyName.ToString(), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
 
-		SessionPtr->CreateSession(0, FName("GameSession"), SessionSettings);
+		SessionPtr->CreateSession(0, LobbyName, SessionSettings);
 	}
 }
 
@@ -94,10 +93,26 @@ void UPROJECTMECHA_Gameinstance::FindSessionCompleted(bool bWasSuccessful)
 {
 	if (bWasSuccessful)
 	{
-		for (const FOnlineSessionSearchResult& results : SearchSettings->SearchResults)
+		if (SearchSettings->SearchResults.Num() > 0)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("Found Session with %s"), *results.GetSessionIdStr());
+			for (const FOnlineSessionSearchResult& results : SearchSettings->SearchResults)
+			{
+				FString LobbyName = GetSessionName(results);
+				UE_LOG(LogTemp, Warning, TEXT("Found Session with %s"), *LobbyName);
+			}
 		}
+
+		onSearchResultCompleted.Broadcast(SearchSettings->SearchResults);
+	}
+}
+
+void UPROJECTMECHA_Gameinstance::JoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
+{
+	if (Result == EOnJoinSessionCompleteResult::Success)
+	{
+		FString TravelURL;
+		SessionPtr->GetResolvedConnectString(SessionName, TravelURL);
+		GetFirstLocalPlayerController(GetWorld())->ClientTravel(TravelURL, ETravelType::TRAVEL_Absolute);
 	}
 }
 
@@ -113,4 +128,27 @@ void UPROJECTMECHA_Gameinstance::FindSession()
 
 		SessionPtr->FindSessions(0, SearchSettings.ToSharedRef());
 	}
+}
+
+void UPROJECTMECHA_Gameinstance::JoinLobbySessionByIndex(int Index)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Index is %d"), Index);
+
+	if (Index >= 0 && Index < SearchSettings->SearchResults.Num())
+	{
+		const FOnlineSessionSearchResult& SearchResult = SearchSettings->SearchResults[Index];
+
+		if(SessionPtr)
+			SessionPtr->JoinSession(0, FName(GetSessionName(SearchResult)), SearchResult);
+	}
+}
+
+FString UPROJECTMECHA_Gameinstance::GetSessionName(const FOnlineSessionSearchResult& SearchResult) const
+{
+	FString OutVal {"Name none"};
+	
+	if(SearchResult.Session.SessionSettings.Get(SessionNameKey, OutVal))
+		return OutVal;
+
+	return OutVal;
 }

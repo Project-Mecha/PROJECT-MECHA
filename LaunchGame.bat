@@ -1,0 +1,1 @@
+"C:\Program Files\Epic Games\UE_5.4\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Users\Beyioku\Documents\Unreal Projects\PROJECT-MECHA\PROJECT_MECHA.uproject" -game -log

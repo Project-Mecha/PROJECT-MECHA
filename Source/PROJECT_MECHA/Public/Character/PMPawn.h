@@ -144,6 +144,8 @@ protected:
 
 	void InitializeStartingValues();
 
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+
 	/** Handles steering input */
 	void Steering(const FInputActionValue& Value);
 

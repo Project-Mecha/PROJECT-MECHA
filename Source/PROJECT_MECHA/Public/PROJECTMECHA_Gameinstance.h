@@ -4,8 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "Interfaces/OnlineIdentityInterface.h"
+#include "Interfaces/OnlineSessionInterface.h"
+#include "OnlineSubsystem.h"
+#include "OnlineSessionSettings.h"
 #include "PROJECTMECHA_Gameinstance.generated.h"
 
+DECLARE_MULTICAST_DELEGATE_OneParam(FOnSessionSearchCompleted, const TArray<FOnlineSessionSearchResult>&);
 
 UCLASS()
 class PROJECT_MECHA_API UPROJECTMECHA_Gameinstance : public UGameInstance
@@ -19,14 +24,22 @@ protected:
 	void SessionCreated(FName SessionName, bool bWasSuccessful);
 
 	void FindSessionCompleted(bool bWasSuccessful);
+	void JoinSessionCompleted(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 public:
 	void Login();
 
 	UFUNCTION(BlueprintCallable)
-		void CreateSession();
-
-	UFUNCTION()
+		void CreateSession(const FName& LobbyName);
+		
+	UFUNCTION(BlueprintCallable)
 	void FindSession();
+
+	void JoinLobbySessionByIndex(int Index);
+
+	FORCEINLINE FName GetSessionName() const { return SessionNameKey; }
+	FString GetSessionName(const FOnlineSessionSearchResult& SearchResult) const;
+	
+	FOnSessionSearchCompleted onSearchResultCompleted;
 
 private:
 	class IOnlineSubsystem* OnlineSubsystem;
@@ -37,4 +50,5 @@ private:
 	TSoftObjectPtr<UWorld> GameLevel;
 
 	TSharedPtr<class FOnlineSessionSearch> SearchSettings;
+	const FName SessionNameKey{ "SessionNameKey" };
 };

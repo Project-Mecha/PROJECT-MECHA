@@ -48,3 +48,8 @@ void UPMCharacterAttributeSet::OnRep_MaxMana(const FGameplayAttributeData& OldMa
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UPMCharacterAttributeSet, MaxMana, OldMaxMana);
 }
+
+void UPMCharacterAttributeSet::OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPMCharacterAttributeSet, AttackPower, OldAttackPower);
+}
