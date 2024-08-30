@@ -36,7 +36,7 @@ public:
 
 	void JoinLobbySessionByIndex(int Index);
 
-	FORCEINLINE FName GetSessionName() const { return SessionNameKey; }
+	FORCEINLINE FName GetCurrentLobbyName() const { return CurrentLobbyName; }
 	FString GetSessionName(const FOnlineSessionSearchResult& SearchResult) const;
 	
 	FOnSessionSearchCompleted onSearchResultCompleted;
@@ -48,7 +48,12 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	TSoftObjectPtr<UWorld> GameLevel;
+	
+	UPROPERTY(EditDefaultsOnly)
+	TSoftObjectPtr<UWorld> LobbyLevel;
 
 	TSharedPtr<class FOnlineSessionSearch> SearchSettings;
 	const FName SessionNameKey{ "SessionNameKey" };
+
+	FName CurrentLobbyName;
 };

@@ -12,7 +12,6 @@
 #include "Abilities/PMGameplayAbility.h"
 #include "Abilities/PMCharacterASC.h"
 #include "Abilities/PMCharacterAttributeSet.h"
-#include "ChaosWheeledVehicleMovementComponent.h"
 #include "Net/UnrealNetwork.h"
 
 APMPawn::APMPawn()
@@ -39,6 +38,7 @@ APMPawn::APMPawn()
 	BackSpringArm->bInheritPitch = false;
 	BackSpringArm->bInheritRoll = false;
 	BackSpringArm->bEnableCameraRotationLag = true;
+	BackSpringArm->bEnableCameraLag = true;
 	BackSpringArm->CameraRotationLagSpeed = 2.0f;
 	BackSpringArm->CameraLagMaxDistance = 50.0f;
 
@@ -96,6 +96,7 @@ void APMPawn::BeginPlay()
 	Super::BeginPlay();
 
 	SetReplicates(true);
+	SetReplicateMovement(true);
 
 	AnimInstance = this->GetMesh()->GetAnimInstance();
 
@@ -160,6 +161,11 @@ void APMPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCompon
 		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Triggered, this, &APMPawn::Throttle);
 		EnhancedInputComponent->BindAction(ThrottleAction, ETriggerEvent::Completed, this, &APMPawn::Throttle);
 
+		// break 
+		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Triggered, this, &APMPawn::Brake);
+		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Started, this, &APMPawn::StartBrake);
+		EnhancedInputComponent->BindAction(BrakeAction, ETriggerEvent::Completed, this, &APMPawn::StopBrake);
+
 		// handbrake 
 		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Started, this, &APMPawn::StartHandbrake);
 		EnhancedInputComponent->BindAction(HandbrakeAction, ETriggerEvent::Completed, this, &APMPawn::StopHandbrake);
@@ -176,6 +182,7 @@ void APMPawn::Tick(float Delta)
 {
 	Super::Tick(Delta);
 
+	HandleCameraLagAndFOV(Delta);
 }
 
 void APMPawn::Steering(const FInputActionValue& Value)
@@ -190,6 +197,25 @@ void APMPawn::Throttle(const FInputActionValue& Value)
 	float ThrottleValue = Value.Get<float>();
 
 	ChaosVehicleMovement->SetThrottleInput(ThrottleValue);
+}
+
+void APMPawn::Brake(const FInputActionValue& Value)
+{
+	// get the input magnitude for the brakes
+	float BreakValue = Value.Get<float>();
+
+	// add the input
+	ChaosVehicleMovement->SetBrakeInput(BreakValue);
+}
+
+void APMPawn::StartBrake(const FInputActionValue& Value)
+{
+
+}
+
+void APMPawn::StopBrake(const FInputActionValue& Value)
+{
+	ChaosVehicleMovement->SetBrakeInput(0.0f);
 }
 
 void APMPawn::StartHandbrake(const FInputActionValue& Value)
@@ -215,34 +241,6 @@ void APMPawn::ToggleCamera(const FInputActionValue& Value)
 
 	FrontCamera->SetActive(bFrontCameraActive);
 	BackCamera->SetActive(!bFrontCameraActive);
-}
-
-void APMPawn::Die()
-{
-	RemoveAbilities();
-
-	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	ChaosVehicleMovement->StopMovementImmediately();
-	//ChaosVehicleMovement->Velocity = FVector(0);
-
-	if (AbilitySystemComponent)
-	{
-		AbilitySystemComponent->CancelAllAbilities();
-
-		FGameplayTagContainer EffectsTagsToRemove;
-		EffectsTagsToRemove.AddTag(EffectRemoveOnDeathTag);
-
-		int NumOfEffectsRemoved = AbilitySystemComponent->RemoveActiveEffectsWithTags(EffectsTagsToRemove);
-		AbilitySystemComponent->AddLooseGameplayTag(DeadTag);
-	}
-
-	if (DeathAnimation)
-		this->GetMesh()->PlayAnimation(DeathAnimation, false);
-}
-
-void APMPawn::FinishDying()
-{
-	Destroy();
 }
 
 void APMPawn::RemoveAbilities()
@@ -287,7 +285,7 @@ void APMPawn::InitializeAttributes()
 
 void APMPawn::AddStartupEffects()
 {
-	check(AbilitySystemComponent);
+	//check(AbilitySystemComponent);
 
 	if (AbilitySystemComponent)
 	{
@@ -321,4 +319,51 @@ void APMPawn::GiveAbilities()
 	}
 
 	AbilitySystemComponent->bCharacterAbilitiesGiven = true;
+}
+
+void APMPawn::HandleCameraLagAndFOV(float DeltaTime)
+{
+	float VehicleSpeed = GetVehicleMovementComponent()->GetForwardSpeed();
+	float MaxSpeed = 80.0f;
+
+	float BaseLagDistance = 10.0f;
+	float MaxLagDistance = 110.0f;
+
+	float LagDistance = FMath::Lerp(BaseLagDistance, MaxLagDistance, VehicleSpeed / MaxSpeed);
+	BackSpringArm->CameraLagMaxDistance = LagDistance;
+
+	float NormalFOV = 90.f;
+	float MaxFOV = 98.f;
+
+	float CurrentFOV = BackCamera->FieldOfView;
+	float TargetFOV = FMath::Clamp(FMath::Lerp(NormalFOV, MaxFOV, VehicleSpeed / MaxSpeed), NormalFOV, MaxFOV);
+	BackCamera->FieldOfView = FMath::FInterpTo(CurrentFOV, TargetFOV, DeltaTime, 2.0f);
+}
+
+void APMPawn::Die()
+{
+	RemoveAbilities();
+
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	ChaosVehicleMovement->StopMovementImmediately();
+	//ChaosVehicleMovement->Velocity = FVector(0);
+
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->CancelAllAbilities();
+
+		FGameplayTagContainer EffectsTagsToRemove;
+		EffectsTagsToRemove.AddTag(EffectRemoveOnDeathTag);
+
+		int NumOfEffectsRemoved = AbilitySystemComponent->RemoveActiveEffectsWithTags(EffectsTagsToRemove);
+		AbilitySystemComponent->AddLooseGameplayTag(DeadTag);
+	}
+
+	if (DeathAnimation)
+		this->GetMesh()->PlayAnimation(DeathAnimation, false);
+}
+
+void APMPawn::FinishDying()
+{
+	Destroy();
 }

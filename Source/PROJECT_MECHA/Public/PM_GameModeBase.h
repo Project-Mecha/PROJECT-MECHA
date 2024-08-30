@@ -16,4 +16,16 @@ class PROJECT_MECHA_API APM_GameModeBase : public AGameModeBase
 	
 public:
 	APM_GameModeBase();
+
+protected:
+	virtual void BeginPlay() override;
+
+protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Gameplay)
+	float TimeRemaining = 0.f;
+
+	FTimerHandle CountDown_Handle;
+
+public:
+	void IncrementTime(float);
 };

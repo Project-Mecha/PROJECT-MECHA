@@ -24,4 +24,15 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void OnPossess(APawn* NewPawn) override;
+
+public:
+	virtual void Tick(float DeltaTime) override;
+
+protected:
+	//TObjectPtr<class APMPawn> MainPlayer;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = UI)
+	TSubclassOf<class UPMQuickMatchWidget> QuickMatchUI_Class;
+
+	TObjectPtr<class UPMQuickMatchWidget> QuickMatchUI;
 };

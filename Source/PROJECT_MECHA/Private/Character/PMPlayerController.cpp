@@ -3,6 +3,8 @@
 
 #include "Character/PMPlayerController.h"
 #include "Character/PMPlayerState.h"
+#include "Character/PMPawn.h"
+#include "Widgets/PMQuickMatchWidget.h"
 
 void APMPlayerController::BeginPlay()
 {
@@ -12,6 +14,12 @@ void APMPlayerController::BeginPlay()
 	{
 		Subsystem->AddMappingContext(PMInputMappingContext, 0);
 	}
+
+	QuickMatchUI = CreateWidget<UPMQuickMatchWidget>(this, QuickMatchUI_Class);
+
+	check(QuickMatchUI);
+
+	QuickMatchUI->AddToViewport();
 }
 
 void APMPlayerController::OnPossess(APawn* NewPawn)
@@ -23,4 +31,16 @@ void APMPlayerController::OnPossess(APawn* NewPawn)
 		PMPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(PlayerState, NewPawn);
 	}
 	
+	//MainPlayer = CastChecked<APMPawn>(NewPawn);
+}
+
+void APMPlayerController::Tick(float Delta)
+{
+	Super::Tick(Delta);
+
+	/*if (IsValid(MainPlayer) && IsValid(QuickMatchUI))
+	{
+		QuickMatchUI->UpdateSpeed(MainPlayer->GetChaosVehicleMovement()->GetForwardSpeed());
+		QuickMatchUI->UpdateGear(MainPlayer->GetChaosVehicleMovement()->GetCurrentGear());
+	}*/
 }

@@ -62,6 +62,7 @@ void UPROJECTMECHA_Gameinstance::CreateSession(const FName& LobbyName)
 		SessionSettings.NumPublicConnections = 10;       //Pay Attention
 
 		SessionSettings.Set(SessionNameKey, LobbyName.ToString(), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
+		CurrentLobbyName = LobbyName;
 
 		SessionPtr->CreateSession(0, LobbyName, SessionSettings);
 	}
@@ -78,13 +79,22 @@ void UPROJECTMECHA_Gameinstance::SessionCreated(FName SessionName, bool bWasSucc
 		UE_LOG(LogTemp, Warning, TEXT("Session creation failed"))
 	}
 
-	if (!GameLevel.IsValid())
+	/*if (!GameLevel.IsValid())
 	{
 		GameLevel.LoadSynchronous();
 	}
 	if (GameLevel.IsValid())
 	{
 		const FName LevelName = FName(*FPackageName::ObjectPathToPackageName(GameLevel.ToString()));
+		GetWorld()->ServerTravel(LevelName.ToString() + "?listen");
+	}*/
+	if (!LobbyLevel.IsValid())
+	{
+		LobbyLevel.LoadSynchronous();
+	}
+	if (LobbyLevel.IsValid())
+	{
+		const FName LevelName = FName(*FPackageName::ObjectPathToPackageName(LobbyLevel.ToString()));
 		GetWorld()->ServerTravel(LevelName.ToString() + "?listen");
 	}
 }
