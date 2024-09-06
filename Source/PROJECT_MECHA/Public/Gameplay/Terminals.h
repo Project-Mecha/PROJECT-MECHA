@@ -32,6 +32,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
 	float AddedTime = 2.f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Gameplay)
+	bool bIsFinishLine = false;
+
 	UFUNCTION()
 	void PassedThrough(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

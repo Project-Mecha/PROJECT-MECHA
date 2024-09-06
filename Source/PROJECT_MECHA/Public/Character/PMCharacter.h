@@ -35,6 +35,8 @@ public:
 
 	FORCEINLINE UCameraComponent* GetCamera() const { return FollowCamera; }
 
+	FORCEINLINE float GetForwardSpeed() const { return FVector::DotProduct(GetVelocity(), GetActorForwardVector()); }
+
 protected:
 	//Inputs
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
@@ -45,6 +47,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAroundAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+	UInputAction* TurnAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	UInputAction* SteeringAction;
@@ -58,14 +63,14 @@ protected:
 	float MaxCameraLagDistance = 110.f;
 
 	float CurrentSpeed;
-	float ReverseSpeed;
 	float MaxSpeed;
-	float MinSpeedReverse;
+	float MaxSpeedReverse;
 	float Acceleration;
 	float Deceleration;
 	float TurnRate;
 
 	bool bIsDecelerating;
+	bool bIsReversing = false;
 
 protected:
 	virtual void BeginPlay() override;
@@ -76,5 +81,7 @@ protected:
 
 	void LookAround(const FInputActionValue& Value);
 
+	void TurnPlayer(const FInputActionValue& Value);
+	
 	void Steering(const FInputActionValue& Value);
 };

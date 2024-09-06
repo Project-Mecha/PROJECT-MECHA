@@ -29,8 +29,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 protected:
-	//TObjectPtr<class APMPawn> MainPlayer;
+	TObjectPtr<class APMCharacter> MainPlayer;
 
+public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = UI)
 	TSubclassOf<class UPMQuickMatchWidget> QuickMatchUI_Class;
 

@@ -26,6 +26,10 @@ protected:
 
 	FTimerHandle CountDown_Handle;
 
+	bool bGameHasEnded = false;
+
 public:
 	void IncrementTime(float);
+	void LooseGame();
+	void WinGame();
 };

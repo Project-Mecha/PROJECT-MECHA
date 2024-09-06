@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Character/PMCharacter.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
@@ -11,83 +8,83 @@
 // Sets default values
 APMCharacter::APMCharacter()
 {
-	PrimaryActorTick.bCanEverTick = true;
+    PrimaryActorTick.bCanEverTick = true;
 
-    this->GetCharacterMovement()->bOrientRotationToMovement = true;
-    this->GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f);
-    this->GetCharacterMovement()->JumpZVelocity = 500.f;
-    this->GetCharacterMovement()->AirControl = 0.3f;
-    this->GetCharacterMovement()->MaxWalkSpeed = 2000.0f;
-    this->GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
-    this->GetCharacterMovement()->BrakingDecelerationWalking = 100.f;
+    GetCharacterMovement()->bOrientRotationToMovement = false;
+    GetCharacterMovement()->RotationRate = FRotator(0.0f, 100.0f, 0.0f);
+    GetCharacterMovement()->JumpZVelocity = 500.f;
+    GetCharacterMovement()->AirControl = 0.3f;
+    GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
+    GetCharacterMovement()->BrakingDecelerationWalking = 100.f;
 
     SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
     SpringArm->SetupAttachment(RootComponent);
     SpringArm->TargetArmLength = 300.0f;
-    SpringArm->bUsePawnControlRotation = true;
+    SpringArm->bUsePawnControlRotation = false;
+    SpringArm->bInheritPitch = false;
+    SpringArm->bInheritRoll = false;
+    SpringArm->bEnableCameraRotationLag = true;
+    SpringArm->bEnableCameraLag = true;
+    SpringArm->CameraRotationLagSpeed = 2.0f;
+    SpringArm->CameraLagMaxDistance = 50.0f;
 
-    // Create a follow camera
     FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
     FollowCamera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
     FollowCamera->bUsePawnControlRotation = false;
 
     CurrentSpeed = 0.0f;
-    ReverseSpeed = 0.f;
-    MaxSpeed = 2000.0f;
-    MinSpeedReverse = -500.0f;
-    Acceleration = 20.0f;
-    Deceleration = 10.0f;
-    TurnRate = 45.0f;
+    MaxSpeed = 3000.0f;
+    MaxSpeedReverse = -1000.0f;
+    Acceleration = 3000.0f;
+    Deceleration = 150.f;
+    TurnRate = .6f;
+    bIsDecelerating = false;
+
+    GetCharacterMovement()->MaxWalkSpeed = MaxSpeed;
 }
 
 void APMCharacter::BeginPlay()
 {
-	Super::BeginPlay();
-	
+    Super::BeginPlay();
 }
 
 void APMCharacter::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+    Super::Tick(DeltaTime);
 
     if (bIsDecelerating)
     {
-        if (CurrentSpeed > 0.0f)
+        float CharacterVelocity = GetCharacterMovement()->Velocity.Size();
+
+        if (CharacterVelocity > 0.0f)
         {
-            CurrentSpeed -= Deceleration * DeltaTime;
-            CurrentSpeed = FMath::Max(CurrentSpeed, 0.0f);
+            CharacterVelocity -= Deceleration * DeltaTime;
+            CharacterVelocity = FMath::Max(CharacterVelocity, 0.0f);
         }
-        else if (ReverseSpeed < 0.0f)
+        else if (CharacterVelocity < 0.0f)
         {
-            ReverseSpeed += Deceleration * DeltaTime;
-            ReverseSpeed = FMath::Min(ReverseSpeed, 0.0f);
+            CharacterVelocity += Deceleration * DeltaTime;
+            CharacterVelocity = FMath::Min(CharacterVelocity, 0.0f);
         }
 
-        if (CurrentSpeed > 0.0f)
-        {
-            AddMovementInput(GetActorForwardVector(), CurrentSpeed * DeltaTime);
-        }
-        else if (ReverseSpeed < 0.0f)
-        {
-            AddMovementInput(GetActorForwardVector(), ReverseSpeed * DeltaTime);
-        }
+        AddMovementInput(GetActorForwardVector(), CharacterVelocity / GetCharacterMovement()->MaxWalkSpeed);
 
-        if (CurrentSpeed <= 0.0f && ReverseSpeed >= 0.0f)
+        if (GetCharacterMovement()->Velocity.Size() <= 20.f)
         {
             bIsDecelerating = false;
+            GetCharacterMovement()->Velocity = FVector::ZeroVector;
         }
     }
 
-    UE_LOG(LogTemp, Warning, TEXT("Reverse Speed: %f"), ReverseSpeed);
-
+    UE_LOG(LogTemp, Warning, TEXT("Current Speed: %f"), GetCharacterMovement()->Velocity.Size());
 }
 
 void APMCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+    Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
-	{
+    if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+    {
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &APMCharacter::Move);
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Completed, this, &APMCharacter::Move);
 
@@ -96,77 +93,95 @@ void APMCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
         EnhancedInputComponent->BindAction(LookAroundAction, ETriggerEvent::Triggered, this, &APMCharacter::LookAround);
 
+        EnhancedInputComponent->BindAction(TurnAction, ETriggerEvent::Triggered, this, &APMCharacter::TurnPlayer);
+
         EnhancedInputComponent->BindAction(SteeringAction, ETriggerEvent::Triggered, this, &APMCharacter::Steering);
-	}
+    }
 }
 
 void APMCharacter::Move(const FInputActionValue& Value)
 {
-	float MovementValue = Value.Get<float>();
+    float MovementValue = Value.Get<float>();
+    CurrentSpeed = GetCharacterMovement()->Velocity.Size();
+    float AccelerationMultiplier = FMath::Clamp(1.0f - (CurrentSpeed / MaxSpeed), 0.1f, 1.0f);
 
     if (MovementValue > 0.0f)
     {
-        CurrentSpeed += Acceleration * MovementValue * GetWorld()->GetDeltaSeconds();
-        CurrentSpeed = FMath::Clamp(CurrentSpeed, 0.f, MaxSpeed);
+        if (CurrentSpeed < 0.0f)
+        {
+            CurrentSpeed += (Deceleration * 3.5f) * MovementValue * GetWorld()->GetDeltaSeconds();
+        }
+        else
+        {
+            CurrentSpeed += (Acceleration * AccelerationMultiplier) * MovementValue * GetWorld()->GetDeltaSeconds();
+            CurrentSpeed = FMath::Clamp(CurrentSpeed, MaxSpeedReverse, MaxSpeed);
+        }
+        AddMovementInput(GetActorForwardVector(), CurrentSpeed / GetCharacterMovement()->MaxWalkSpeed);
         bIsDecelerating = false;
     }
-    else if (MovementValue == 0 && CurrentSpeed > 0.0f && !bIsDecelerating)
+    else if (MovementValue == 0 && CurrentSpeed != 0.0f && !bIsDecelerating)
     {
         bIsDecelerating = true;
     }
 
-    AddMovementInput(GetActorForwardVector(), CurrentSpeed * GetWorld()->GetDeltaSeconds());
 }
 
 void APMCharacter::Brake(const FInputActionValue& Value)
 {
     float MovementValue = Value.Get<float>();
 
+    CurrentSpeed = GetForwardSpeed();
+
     if (MovementValue > 0.0f && CurrentSpeed > 0.0f)
     {
-        CurrentSpeed -= Deceleration * -MovementValue * GetWorld()->GetDeltaSeconds();
-        CurrentSpeed = FMath::Max(CurrentSpeed, 0.0f);
-    }
-    else if (MovementValue > 0.0f && CurrentSpeed == 0.0f)
-    {
-        ReverseSpeed -= Acceleration * -MovementValue * GetWorld()->GetDeltaSeconds();
-        ReverseSpeed = FMath::Clamp(ReverseSpeed, ReverseSpeed, 0.0f);
+        CurrentSpeed = GetCharacterMovement()->Velocity.Size();
+        CurrentSpeed -= (Deceleration * 2.f) * MovementValue * GetWorld()->GetDeltaSeconds();
         bIsDecelerating = false;
 
-        AddMovementInput(GetActorForwardVector(), ReverseSpeed * GetWorld()->GetDeltaSeconds());
+        AddMovementInput(GetActorForwardVector(), CurrentSpeed / GetCharacterMovement()->MaxWalkSpeed);
     }
-    else if (MovementValue == 0.0f && ReverseSpeed < 0.0f)
+    else if (MovementValue > 0.0f && CurrentSpeed <= 0.0f)
     {
-        ReverseSpeed += Deceleration * GetWorld()->GetDeltaSeconds();
-        ReverseSpeed = FMath::Min(ReverseSpeed, 0.0f);
+        CurrentSpeed -= Acceleration * MovementValue * GetWorld()->GetDeltaSeconds();
+        CurrentSpeed = FMath::Clamp(CurrentSpeed, MaxSpeedReverse, MaxSpeed);
+        bIsDecelerating = false;
 
-        AddMovementInput(GetActorForwardVector(), ReverseSpeed * GetWorld()->GetDeltaSeconds());
+        AddMovementInput(GetActorForwardVector(), CurrentSpeed / GetCharacterMovement()->MaxWalkSpeed);
 
-        if (ReverseSpeed >= 0.0f)
-        {
-            bIsDecelerating = false;
-        }
     }
-
+    else if (MovementValue == 0.0f && CurrentSpeed != 0.0f && !bIsDecelerating)
+    {
+        bIsDecelerating = true;
+    }
 }
 
 void APMCharacter::LookAround(const FInputActionValue& Value)
 {
-    float LookValue = Value.Get<float>();
+    FVector2D LookValue = Value.Get<FVector2D>();
+    FRotator NewRotation = SpringArm->GetRelativeRotation();
+    float NewPitch = FMath::Clamp(NewRotation.Pitch + LookValue.Y, -45.f, 45.f);
+    float NewYaw = FMath::Clamp(NewRotation.Yaw + LookValue.X, -60.f, 60.f);
+    SpringArm->SetRelativeRotation(FRotator(NewPitch, NewYaw, NewRotation.Roll));
+}
 
-    SpringArm->AddLocalRotation(FRotator(0.f, LookValue, 0.f));
+void APMCharacter::TurnPlayer(const FInputActionValue& Value)
+{
+    float TurnValue = Value.Get<float>();
+    AddControllerYawInput(TurnValue * TurnRate);
 }
 
 void APMCharacter::Steering(const FInputActionValue& Value)
 {
-    float TurnValue = Value.Get<float>();
+    float SteerValue = Value.Get<float>();
 
-    if (TurnValue != 0.0f)
+    if (this->GetController())
     {
-        FRotator NewRotation = GetActorRotation();
-        NewRotation.Yaw += TurnValue * TurnRate * GetWorld()->GetDeltaSeconds();
-
-        SetActorRotation(NewRotation);
+        const float YawValue = GetControlRotation().Yaw;
+        const FRotator YawRotation = FRotator(0, YawValue, 0);
+        const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+        float AbsoluteSpeed = GetCharacterMovement()->Velocity.Size();
+        float ShiftingSpeedMultiplier = FMath::Clamp(AbsoluteSpeed / GetCharacterMovement()->MaxWalkSpeed, 0.0f, 0.35f);
+        SteerValue *= ShiftingSpeedMultiplier;
+        AddMovementInput(RightDirection, SteerValue);
     }
 }
-

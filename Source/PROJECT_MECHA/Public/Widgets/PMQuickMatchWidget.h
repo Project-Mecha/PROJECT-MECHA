@@ -6,9 +6,10 @@
 #include "Blueprint/UserWidget.h"
 #include "PMQuickMatchWidget.generated.h"
 
-/**
- * 
- */
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTimeAdded);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnLittleTime);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGameFinished, const FString&, Status);
+
 UCLASS()
 class PROJECT_MECHA_API UPMQuickMatchWidget : public UUserWidget
 {
@@ -31,6 +32,15 @@ public:
 
 	/** Called to update the gear display */
 	void UpdateGear(int32 NewGear);
+
+	UPROPERTY(BlueprintAssignable)
+	FOnTimeAdded onTimeAdded;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnGameFinished onGameFinished;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnLittleTime onLittleTime;
 
 protected:
 

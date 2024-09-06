@@ -5,7 +5,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/SceneComponent.h"
-#include "Character/PMPawn.h"
+#include "Character/PMCharacter.h"
 #include "PM_GameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -34,11 +34,14 @@ void ATerminals::BeginPlay()
 
 void ATerminals::PassedThrough(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (Cast<APMPawn>(OtherActor))
+	if (Cast<APMCharacter>(OtherActor))
 	{
 		if (APM_GameModeBase* GameMode = Cast<APM_GameModeBase>(UGameplayStatics::GetGameMode(this)))
 		{
-			GameMode->IncrementTime(AddedTime);
+			if(!bIsFinishLine)
+				GameMode->IncrementTime(AddedTime);
+			else
+				GameMode->WinGame();
 		}
 	}
 }
