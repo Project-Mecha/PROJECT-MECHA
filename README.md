@@ -5,8 +5,8 @@ Project Mecha is a high-octane mech racing action game that thrusts players into
 
 Key features includes:
 
-Custom Mechs Creation
-Unparalleled Customization using Compossability
-High-octane races
-Rewards and drops using Aptos Roll
-Intense Action
+1. Custom Mechs Creation
+2. Unparalleled Customization using Compossability
+3. High-octane races
+4. Rewards and drops using Aptos Roll
+5. Intense Action
