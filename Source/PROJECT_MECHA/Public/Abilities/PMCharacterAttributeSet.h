@@ -45,7 +45,7 @@ public:
 	FGameplayAttributeData Level;
 	ATTRIBUTE_ACCESSORS(UPMCharacterAttributeSet, Level)
 
-	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_AttackPower)
 	FGameplayAttributeData AttackPower;
 	ATTRIBUTE_ACCESSORS(UPMCharacterAttributeSet, AttackPower)
 
@@ -63,4 +63,7 @@ public:
 
 	UFUNCTION()
 	virtual void OnRep_MaxMana(const FGameplayAttributeData& OldMaxMana);
+
+	UFUNCTION()
+	virtual void OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower);
 };

@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "WheeledVehiclePawn.h"
 #include "AbilitySystemInterface.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
+#include "ChaosWheeledVehicleMovementComponent.h"
 #include "GameplayTagContainer.h"
 #include "PROJECT_MECHA/PROJECT_MECHA.h"
 #include "PMPawn.generated.h"
@@ -12,7 +15,6 @@
 class UCameraComponent;
 class USpringArmComponent;
 class UInputAction;
-class UChaosWheeledVehicleMovementComponent;
 struct FInputActionValue;
 
 UCLASS()
@@ -52,6 +54,19 @@ public:
 	virtual void AddStartupEffects();
 	virtual void GiveAbilities();
 
+	UFUNCTION(BlueprintCallable, Category = "Character|Camera")
+	FORCEINLINE float GetBackCameraBoomLength() const { return BackSpringArm->TargetArmLength; }
+
+	FORCEINLINE USpringArmComponent* GetFrontSpringArm() const { return FrontSpringArm; }
+	
+	FORCEINLINE UCameraComponent* GetFollowCamera() const { return FrontCamera; }
+	
+	FORCEINLINE USpringArmComponent* GetBackSpringArm() const { return BackSpringArm; }
+	
+	FORCEINLINE UCameraComponent* GetBackCamera() const { return BackCamera; }
+	
+	FORCEINLINE const TObjectPtr<UChaosWheeledVehicleMovementComponent>& GetChaosVehicleMovement() const { return ChaosVehicleMovement; }
+
 protected:
 	/** Steering Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
@@ -60,6 +75,14 @@ protected:
 	/** Throttle Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	UInputAction* ThrottleAction;
+
+	/** Brake Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+	UInputAction* BrakeAction;
+
+	/** Handbrake Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+	UInputAction* HandbrakeAction;
 
 	/** Look Around Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
@@ -71,6 +94,9 @@ protected:
 
 	/** Keeps track of which camera is active */
 	bool bFrontCameraActive = false;
+
+	float StartingCameraBoomArmLength = 0.f;
+	FVector StartingCameraBoomLocation = FVector();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Character|Abilities", meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<class UPMCharacterASC> AbilitySystemComponent;
@@ -97,24 +123,32 @@ protected:
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Character|Props")
 	TObjectPtr<UAnimationAsset> DeathAnimation;
 
-	//Getters
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	float GetHealth();
-
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	float GetMaxHealth();
-
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	float GetAttributeLevel();
+	float MaxCameraLagDistance = 110.f;
+	
 
 protected:
 	virtual void BeginPlay();
 
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+
+	void InitializeStartingValues();
+
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+
+	//INPUT
 	/** Handles steering input */
 	void Steering(const FInputActionValue& Value);
 
 	/** Handles throttle input */
 	void Throttle(const FInputActionValue& Value);
+
+	/** Handles brake input */
+	void Brake(const FInputActionValue& Value);
+
+	/** Handles brake start/stop inputs */
+	void StartBrake(const FInputActionValue& Value);
+	void StopBrake(const FInputActionValue& Value);
 
 	/** Handles handbrake start/stop inputs */
 	void StartHandbrake(const FInputActionValue& Value);
@@ -125,6 +159,28 @@ protected:
 
 	/** Handles toggle camera input */
 	void ToggleCamera(const FInputActionValue& Value);
+
+
+	//GETTERS
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetHealth();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetMaxHealth();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetMaxMana();
+
+	void SetMana(float Health);
+
+	void SetHealth(float Health);
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	float GetAttributeLevel();
+
+
+	//GAMEPLAY
+	void HandleCameraLagAndFOV(float DeltaTime);
 
 	void Die();
 	void FinishDying();
