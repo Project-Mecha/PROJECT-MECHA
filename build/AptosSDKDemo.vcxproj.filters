@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\AddTokenPropertyResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\CreateCollectionResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\CreateTokenResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\MintTokenResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\TransferObjectResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\UpdateTokenResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Model\MultisigTransferBcsTransactionResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Model\RotateKeyBcsTransactionResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\TransferCoin\Model\TransferCoinBCSResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\AptosToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\TransferCoin\TransferCoinExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\SimulateTransferCoin\SimulateTransferCoin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\SimpleNftExample\SimpleNftExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Multisig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\AddTokenPropertyResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\CreateCollectionResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\CreateTokenResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\MintTokenResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\TransferObjectResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\Model\UpdateTokenResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Model\MultisigTransferBcsTransactionResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Model\RotateKeyBcsTransactionResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\TransferCoin\Model\TransferCoinBCSResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\AptosToken\AptosToken.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\TransferCoin\TransferCoinExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\SimulateTransferCoin\SimulateTransferCoin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\SimpleNftExample\SimpleNftExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosSDKDemo\Multisig\Multisig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EC193514-46E0-39F2-BF62-3FD3A08A5DDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A4B6F8A5-D003-32E4-918A-CFB4B83DBF3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

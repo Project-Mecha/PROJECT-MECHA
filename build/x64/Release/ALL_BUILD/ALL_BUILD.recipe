@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\Aptos.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\AptosSDKDemo.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\AptosUILogic.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\AptosUILogicTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\test_account.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\test_serialization.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\test_transaction_serialization.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\test_utils.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\test_wallet.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

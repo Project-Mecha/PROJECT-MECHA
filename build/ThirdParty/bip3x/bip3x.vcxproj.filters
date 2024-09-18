@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\crypto\sha256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\address.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\base58.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\bignum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\blake256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\ecdsa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\hasher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\hmac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\memzero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\pbkdf2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\rand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\ripemd160.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\secp256k1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\sha2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\trezor-crypto\sha3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\crypto\sha256_sse4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\crypto\hmac_sha256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\crypto\hmac_sha512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\crypto\sha512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\bip3x\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\bip3x\bip3x_hdkey_encoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\bip3x\bip3x_mnemonic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\bip39.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\mnemonic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\chinese_simplified.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\chinese_traditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\english.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\french.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\italian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\japanese.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlists\spanish.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\bip3x\bip3x_crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\win_endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\bip3x_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\sha256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\hmac_sha256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\hmac_sha512.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\sha512.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\details\uint256_t.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\details\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\details\PCGRand.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\bip3x_mnemonic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\bip3x_hdkey_encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\bip3x_crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\base58.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\bignum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\blake256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\check_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\ecdsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\hasher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\hmac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\memzero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\pbkdf2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\rfc6979.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\ripemd160.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\secp256k1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\sha2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\sha3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\include\bip3x\crypto\packed_attr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\bip39.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\mnemonic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\src\details\wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\ThirdParty\bip3x\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EC193514-46E0-39F2-BF62-3FD3A08A5DDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A4B6F8A5-D003-32E4-918A-CFB4B83DBF3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

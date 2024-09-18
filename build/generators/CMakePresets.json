@@ -1,0 +1,54 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-default",
+            "displayName": "'conan-default' config",
+            "description": "'conan-default' configure using 'Visual Studio 17 2022' generator",
+            "generator": "Visual Studio 17 2022",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW"
+            },
+            "environment": {
+                "AUTOMAKE_CONAN_INCLUDES": "C:\\Users\\Beyioku\\.conan2\\p\\xapiab284ff9fc5d22\\p\\res\\aclocal;$penv{AUTOMAKE_CONAN_INCLUDES}"
+            },
+            "toolset": {
+                "value": "v143",
+                "strategy": "external"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "toolchainFile": "generators\\conan_toolchain.cmake",
+            "binaryDir": "C:\\Users\\Beyioku\\Documents\\Unreal Projects\\Aptos-Cpp-SDK\\build"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-default",
+            "configuration": "Release",
+            "jobs": 8
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-default",
+            "configuration": "Release",
+            "environment": {
+                "PATH": "C:\\Users\\Beyioku\\.conan2\\p\\doxyg9774c0925daa6\\p\\bin;C:\\Users\\Beyioku\\.conan2\\p\\cmake98309fcbb52ab\\p\\bin;$penv{PATH}",
+                "OPENSSL_MODULES": "C:\\Users\\Beyioku\\.conan2\\p\\opens1196ee88005bb\\p\\lib\\ossl-modules"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+﻿  Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/CMakeLists.txt
+  AddTokenPropertyResponse.cpp
+  CreateCollectionResponse.cpp
+  CreateTokenResponse.cpp
+  MintTokenResponse.cpp
+  TransferObjectResponse.cpp
+  UpdateTokenResponse.cpp
+  MultisigTransferBcsTransactionResponse.cpp
+  RotateKeyBcsTransactionResponse.cpp
+  TransferCoinBCSResponse.cpp
+  AptosToken.cpp
+  main.cpp
+  TransferCoinExample.cpp
+  SimulateTransferCoin.cpp
+  SimpleNftExample.cpp
+  Multisig.cpp
+  Generating Code...
+  AptosSDKDemo.vcxproj -> C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\AptosSDKDemo.exe

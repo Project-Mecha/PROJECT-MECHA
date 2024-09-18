@@ -1,0 +1,13 @@
+﻿  Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt
+  bytes_data.cpp
+  bytes_buffer.cpp
+  utils.cpp
+  strings.cpp
+  regex.cpp
+  io.cpp
+  decimal_formatter.cpp
+  term.cpp
+  log.cpp
+  time_profiler.cpp
+  base64.cpp
+  toolbox.vcxproj -> C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\lib\Release\toolbox.lib

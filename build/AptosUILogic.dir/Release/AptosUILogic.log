@@ -1,0 +1,114 @@
+﻿  Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/CMakeLists.txt
+  uicontrollerlogic.cpp
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(20,18): warning C4273: 'Aptos::Rest::RestClient::SetEndpoint': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(34,14): message : see previous definition of 'SetEndpoint'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(26,13): warning C4273: 'Aptos::Rest::RestClient::RestClient': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(35,9): message : see previous definition of '{ctor}'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(30,18): warning C4273: 'Aptos::Rest::RestClient::SetUp': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(37,14): message : see previous definition of 'SetUp'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(48,18): warning C4273: 'Aptos::Rest::RestClient::GetAccount': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(54,14): message : see previous definition of 'GetAccount'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(82,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountSequenceNumber': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(66,14): message : see previous definition of 'GetAccountSequenceNumber'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(104,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountBalance': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(106,14): message : see previous definition of 'GetAccountBalance'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(141,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountResource': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(121,14): message : see previous definition of 'GetAccountResource'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(159,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountResources': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(132,14): message : see previous definition of 'GetAccountResources'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(177,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountResourceCollection': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(143,14): message : see previous definition of 'GetAccountResourceCollection'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(206,18): warning C4273: 'Aptos::Rest::RestClient::GetTableItemCoin': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(157,14): message : see previous definition of 'GetTableItemCoin'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(233,18): warning C4273: 'Aptos::Rest::RestClient::GetTableItem': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(175,14): message : see previous definition of 'GetTableItem'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(255,18): warning C4273: 'Aptos::Rest::RestClient::GetTableItemNFT': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(205,14): message : see previous definition of 'GetTableItemNFT'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(300,18): warning C4273: 'Aptos::Rest::RestClient::GetTableItemTokenData': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(257,14): message : see previous definition of 'GetTableItemTokenData'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(335,18): warning C4273: 'Aptos::Rest::RestClient::GetInfo': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(268,14): message : see previous definition of 'GetInfo'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(363,18): warning C4273: 'Aptos::Rest::RestClient::SimulateTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(270,14): message : see previous definition of 'SimulateTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(398,18): warning C4273: 'Aptos::Rest::RestClient::SubmitBCSTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(278,14): message : see previous definition of 'SubmitBCSTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(423,18): warning C4273: 'Aptos::Rest::RestClient::View': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(307,14): message : see previous definition of 'View'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(449,18): warning C4273: 'Aptos::Rest::RestClient::SubmitTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(320,14): message : see previous definition of 'SubmitTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(521,18): warning C4273: 'Aptos::Rest::RestClient::WaitForTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(341,14): message : see previous definition of 'WaitForTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(571,18): warning C4273: 'Aptos::Rest::RestClient::TransactionPending': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(356,14): message : see previous definition of 'TransactionPending'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(597,18): warning C4273: 'Aptos::Rest::RestClient::TransactionByHash': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(357,14): message : see previous definition of 'TransactionByHash'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(622,18): warning C4273: 'Aptos::Rest::RestClient::CreateBCSSignedTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(358,14): message : see previous definition of 'CreateBCSSignedTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(635,18): warning C4273: 'Aptos::Rest::RestClient::CreateBCSTransaction': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(359,14): message : see previous definition of 'CreateBCSTransaction'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(672,18): warning C4273: 'Aptos::Rest::RestClient::Transfer': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(373,14): message : see previous definition of 'Transfer'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(712,18): warning C4273: 'Aptos::Rest::RestClient::BCSTransfer': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(374,14): message : see previous definition of 'BCSTransfer'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(741,18): warning C4273: 'Aptos::Rest::RestClient::EncodeSubmission': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(396,14): message : see previous definition of 'EncodeSubmission'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(758,18): warning C4273: 'Aptos::Rest::RestClient::EncodeSubmissionAsBytes': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(403,14): message : see previous definition of 'EncodeSubmissionAsBytes'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(775,18): warning C4273: 'Aptos::Rest::RestClient::CreateCollection': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(415,14): message : see previous definition of 'CreateCollection'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(815,18): warning C4273: 'Aptos::Rest::RestClient::CreateToken': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(437,14): message : see previous definition of 'CreateToken'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(869,18): warning C4273: 'Aptos::Rest::RestClient::OfferToken': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(461,14): message : see previous definition of 'OfferToken'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(921,18): warning C4273: 'Aptos::Rest::RestClient::ClaimToken': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(483,14): message : see previous definition of 'ClaimToken'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(973,18): warning C4273: 'Aptos::Rest::RestClient::GetToken': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(502,14): message : see previous definition of 'GetToken'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1026,18): warning C4273: 'Aptos::Rest::RestClient::GetTokenBalance': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(519,14): message : see previous definition of 'GetTokenBalance'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1047,18): warning C4273: 'Aptos::Rest::RestClient::GetTokenData': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(565,14): message : see previous definition of 'GetTokenData'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1089,18): warning C4273: 'Aptos::Rest::RestClient::GetCollection': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(578,14): message : see previous definition of 'GetCollection'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1120,18): warning C4273: 'Aptos::Rest::RestClient::TransferObject': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(582,14): message : see previous definition of 'TransferObject'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1150,18): warning C4273: 'Aptos::Rest::RestClient::GetAccountResource': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(600,14): message : see previous definition of 'GetAccountResource'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST/RestClient.cpp(1166,17): warning C4273: 'Aptos::Rest::RestClient::ChainId': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h(605,13): message : see previous definition of 'ChainId'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(271,7): warning C4273: 'AptosUILogic_createUiController': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(17,17): message : see previous definition of 'AptosUILogic_createUiController'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(276,6): warning C4273: 'AptosUILogic_deleteUiController': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(18,16): message : see previous definition of 'AptosUILogic_deleteUiController'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(282,6): warning C4273: 'AptosUILogic_createNewWallet': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(20,16): message : see previous definition of 'AptosUILogic_createNewWallet'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(298,7): warning C4273: 'AptosUILogic_getMnemonicsKey': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(23,17): message : see previous definition of 'AptosUILogic_getMnemonicsKey'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(304,7): warning C4273: 'AptosUILogic_getCurrentWalletBalanceText': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(25,17): message : see previous definition of 'AptosUILogic_getCurrentWalletBalanceText'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(310,6): warning C4273: 'AptosUILogic_setNetwork': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(19,16): message : see previous definition of 'AptosUILogic_setNetwork'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(330,6): warning C4273: 'AptosUILogic_restoreWallet': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(22,16): message : see previous definition of 'AptosUILogic_restoreWallet'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(344,6): warning C4273: 'AptosUILogic_deleteString': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(26,16): message : see previous definition of 'AptosUILogic_deleteString'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(349,6): warning C4273: 'AptosUILogic_deleteStringArray': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(27,16): message : see previous definition of 'AptosUILogic_deleteStringArray'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(358,8): warning C4273: 'AptosUILogic_getWalletAddress': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(28,18): message : see previous definition of 'AptosUILogic_getWalletAddress'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(375,7): warning C4273: 'AptosUILogic_onWalletListDropdownValueChanged': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(29,17): message : see previous definition of 'AptosUILogic_onWalletListDropdownValueChanged'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(383,7): warning C4273: 'AptosUILogic_getCurrentWalletAddress': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(30,17): message : see previous definition of 'AptosUILogic_getCurrentWalletAddress'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(389,7): warning C4273: 'AptosUILogic_getPrivateKey': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(24,17): message : see previous definition of 'AptosUILogic_getPrivateKey'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(395,6): warning C4273: 'AptosUILogic_airdrop': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(31,16): message : see previous definition of 'AptosUILogic_airdrop'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(401,6): warning C4273: 'AptosUILogic_sendToken': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(32,16): message : see previous definition of 'AptosUILogic_sendToken'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(407,6): warning C4273: 'AptosUILogic_createCollection': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(33,16): message : see previous definition of 'AptosUILogic_createCollection'
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.cpp(413,6): warning C4273: 'AptosUILogic_createNFT': inconsistent dll linkage
+C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\AptosUI\Source\LIB\uicontrollerlogic.h(34,16): message : see previous definition of 'AptosUILogic_createNFT'
+     Creating library C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/Release/AptosUILogic.lib and object C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/Release/AptosUILogic.exp
+  AptosUILogic.vcxproj -> C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\Release\AptosUILogic.dll

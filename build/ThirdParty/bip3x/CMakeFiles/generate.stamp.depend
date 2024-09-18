@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FetchContent/CMakeLists.cmake.in
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.30/Templates/CPackConfig.cmake.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/CMakeLists.txt
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cfg/bip3x-config.cmake.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cfg/bip3x.pc.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cfg/bip3x_config.in.h
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cfg/cbip39_config.in.h
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cfg/version.info.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cmake/compiler_flags.cmake
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/cmake/package.cmake

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\CMakeFiles\9f8174e4aa74c01f56390049df7d9e32\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A05FEE72-5DC0-32F5-A100-ED669E4C9135}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

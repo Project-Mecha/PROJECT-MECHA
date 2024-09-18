@@ -1,0 +1,10 @@
+prefix=C:/Program Files (x86)/Aptos
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: bip3x
+Description: Native BIP39 Mnemonic implementation (with JNI and pure C bindings)
+Version: 0.1.0
+Libs: -L${libdir} -lbip3x
+Cflags: -I${includedir}

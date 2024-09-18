@@ -1,0 +1,150 @@
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/tmp/toolbox-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/tmp/toolbox-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-UPDATE.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/tmp/toolbox-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\8FCDAF7F3458623EF82BE85583AB39A5\TOOLBOX-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\1516CCFA1BC254882A752980EEB06105\TOOLBOX-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/CMakeFiles/Debug/toolbox-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/toolbox-populate-prefix/src/toolbox-populate-stamp/Debug/toolbox-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKEFILES\0C1F281AC220BB4E7BFC046EB4BAEAA8\TOOLBOX-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BEYIOKU\DOCUMENTS\UNREAL PROJECTS\APTOS-CPP-SDK\BUILD\_DEPS\TOOLBOX-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild" "-BC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild" --check-stamp-file "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

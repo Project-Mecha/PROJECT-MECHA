@@ -1,0 +1,35 @@
+﻿  Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/ThirdParty/bip3x/CMakeLists.txt
+  sha256.cpp
+  address.cpp
+  base58.cpp
+  bignum.cpp
+  blake256.cpp
+  ecdsa.cpp
+  hasher.cpp
+  hmac.cpp
+  memzero.cpp
+  pbkdf2.cpp
+  rand.cpp
+  ripemd160.cpp
+  secp256k1.cpp
+  sha2.cpp
+  sha3.cpp
+  sha256_sse4.cpp
+  hmac_sha256.cpp
+  hmac_sha512.cpp
+  sha512.cpp
+  utils.cpp
+  bip3x_hdkey_encoder.cpp
+  bip3x_mnemonic.cpp
+  bip39.cpp
+  mnemonic.cpp
+  wordlist.cpp
+  chinese_simplified.cpp
+  chinese_traditional.cpp
+  english.cpp
+  french.cpp
+  italian.cpp
+  japanese.cpp
+  spanish.cpp
+  bip3x_crypto.cpp
+  bip3x.vcxproj -> C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\ThirdParty\bip3x\Release\bip3x.lib

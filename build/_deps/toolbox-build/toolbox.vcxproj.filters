@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\bytes_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\bytes_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings\regex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings\decimal_formatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\term.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\time_profiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\toolbox_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\literals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings\regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\term.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings\decimal_formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\time_profiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\collections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\basic_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\transformers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EC193514-46E0-39F2-BF62-3FD3A08A5DDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A4B6F8A5-D003-32E4-918A-CFB4B83DBF3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

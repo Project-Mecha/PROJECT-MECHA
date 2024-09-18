@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Deserialization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Serialization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BCSTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Bytes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Bool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U128.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\TagSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\ByteSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BCSMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\Rawtransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\MultiAgentRawTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\TransactionPayload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Script\Script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\ScriptArgument\ScriptArgument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\EntryFunctions\EntryFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Modules\ModuleId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\TransactionArgument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\SignedTransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519\PublicKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\HDWallet\Utils\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519\PrivateKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Types\MultiEd25519PublicKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519Signature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\AccountAddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\AuthenticationKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Multipublickey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Multisignature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\HDWallet\Wallet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\Authenticator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\StructTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Constant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceCoin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceTokenStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AptosError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\GasEstimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\LedgerInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ResourceCollection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ResponseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequestNFT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequestTokenData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenDataId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenDataIdRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenIdRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionPayload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ViewRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\AccountResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\CapabilityOffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\IResourceBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceDataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\CollectionResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\ObjectResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\PropertyMapResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\RoyaltyResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\TokenResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemToken\TableItemToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemToken\TableItemTokenMetadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceBaseListConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionRequestConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\FaucetClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RequestClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\AptosTokenClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519Bip32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\RotationProofChallenge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BCS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Deserialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Serialization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BCSTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Bytes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Bool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U128.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\U256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\TagSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\ByteSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BCSMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\BString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\Rawtransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\MultiAgentRawTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\TransactionPayload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Script\Script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\ScriptArgument\ScriptArgument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\EntryFunctions\EntryFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\Modules\ModuleId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\TransactionArgument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\SignedTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519\PublicKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\HDWallet\Utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519\PrivateKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519Signature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Multipublickey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Multisignature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\HDWallet\Wallet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Transactions\Authenticator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\BCS\StructTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Constant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceCoin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AccountResourceTokenStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\AptosError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\GasEstimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\LedgerInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ResourceCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ResponseInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequestNFT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemRequestTokenData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenDataId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenDataIdRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TokenIdRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionPayload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\ViewRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\AccountResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\CapabilityOffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\IResourceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceDataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\CollectionResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\ObjectResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\PropertyMapResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\RoyaltyResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\TokenResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemToken\TableItemToken.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TableItemToken\TableItemTokenMetadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\Resources\Base\ResourceBaseListConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionRequestConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\Model\TransactionConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\FaucetClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RequestClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\AptosTokenClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\REST\RestClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\Ed25519Bip32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\Src\Accounts\RotationProofChallenge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EC193514-46E0-39F2-BF62-3FD3A08A5DDC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A4B6F8A5-D003-32E4-918A-CFB4B83DBF3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3BC48FAB-BFB7-3A65-A44E-7800C50D6985}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>toolbox</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">toolbox.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">toolbox</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">toolbox.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">toolbox</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">toolbox.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">toolbox</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">toolbox.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">toolbox</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4251;4838;4068;4319;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;EBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4146;4251;4838;4068;4319;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4146;4251;4838;4068;4319;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4251;4838;4068;4319;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TOOLBOX_EXPORTS;BIP3X_EXPORTS;BIP3X_BUILT_AS_STATIC;USE_KECCAK=1;USE_MONERO=1;NO_VALGRIND=1;USE_ETHEREUM=1;USE_GRAPHENE=1;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK" "-BC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build" --check-stamp-file "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\package_upload.sh;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox-config.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox.pc.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox_config.in.h;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\version.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\FindLinuxPlatform.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\SystemDetector.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\compilers_flags.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK" "-BC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build" --check-stamp-file "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\package_upload.sh;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox-config.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox.pc.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox_config.in.h;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\version.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\FindLinuxPlatform.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\SystemDetector.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\compilers_flags.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK" "-BC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build" --check-stamp-file "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\package_upload.sh;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox-config.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox.pc.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox_config.in.h;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\version.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\FindLinuxPlatform.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\SystemDetector.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\compilers_flags.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK" "-BC:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build" --check-stamp-file "C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FeatureSummary.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Templates\CPackConfig.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\package_upload.sh;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox-config.cmake.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox.pc.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\toolbox_config.in.h;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\cfg\version.in;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\FindLinuxPlatform.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\SystemDetector.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\compilers_flags.cmake;C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\modules\package.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\toolbox_config.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data.hpp" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_data.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_buffer.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\utils.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\literals.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings.hpp" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings\regex.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\term.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\log.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\io.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\strings\decimal_formatter.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\time_profiler.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\collections.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\base64.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\basic_data.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\bytes_array.h" />
+    <ClInclude Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\include\toolbox\data\transformers.h" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\bytes_data.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\bytes_buffer.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\utils.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings\regex.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\io.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\strings\decimal_formatter.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\term.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\log.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\time_profiler.cpp" />
+    <ClCompile Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\_deps\toolbox-src\src\data\base64.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Beyioku\Documents\Unreal Projects\Aptos-Cpp-SDK\build\ZERO_CHECK.vcxproj">
+      <Project>{1D8BB8EE-10F6-39CA-ACBE-84F2ABA429FC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FeatureSummary.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.30/Templates/CPackConfig.cmake.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/CMakeLists.txt
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/cfg/package_upload.sh
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/cfg/toolbox-config.cmake.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/cfg/toolbox.pc.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/cfg/toolbox_config.in.h
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/cfg/version.in
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/modules/FindLinuxPlatform.cmake
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/modules/SystemDetector.cmake
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/modules/compilers_flags.cmake
+C:/Users/Beyioku/Documents/Unreal Projects/Aptos-Cpp-SDK/build/_deps/toolbox-src/modules/package.cmake
